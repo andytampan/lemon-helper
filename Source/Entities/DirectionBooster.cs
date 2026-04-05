@@ -5,7 +5,8 @@ using Monocle;
 namespace Celeste.Mod.andytampan.Entities;
 
 [CustomEntity("andytampan/DirectionBooster")]
-public class DirectionBooster : Booster {
+public class DirectionBooster : Booster
+{
     public enum BoosterDirection
     {
         up,
@@ -18,7 +19,8 @@ public class DirectionBooster : Booster {
         upleft,
     };
     public BoosterDirection boosterDir;
-    public DirectionBooster(EntityData data, Vector2 offset ) : base(data.Position + offset, data.Bool("red")) {
+    public DirectionBooster(EntityData data, Vector2 offset) : base(data.Position + offset, data.Bool("red"))
+    {
         boosterDir = data.Enum<BoosterDirection>("direction");
         bool arrow = data.Bool("arrow");
         if (arrow == true)

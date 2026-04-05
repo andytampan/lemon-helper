@@ -1,7 +1,9 @@
 # Sample Entity
-entities.andytampan/SampleEntity.placements.name.normal=Sample Entity
-entities.andytampan/SampleEntity.attributes.description.sampleProperty=A sample property for your entity.
+entities.andytampan/DirectionBooster.placements.name.normal=A booster that can only go in a specific direction.
+entities.andytampan/DirectionBooster.attributes.description.direction=The direction the booster will send you.
+entities.andytampan/DirectionBooster.attributes.description.arrow=Will hide arrow indicator if unticked.
+entities.andytampan/DirectionBooster.attributes.description.red= Determine whether the booster is green or red
 
 # Sample Trigger
-triggers.andytampan/SampleTrigger.placements.name.normal=Sample Trigger
-triggers.andytampan/SampleTrigger.attributes.description.sampleProperty=A sample property for your trigger.
+triggers.andytampan/UnaliveTrigger.placements.name.normal=Do NOT actually kill the player, note that you need to use debug to reset without help.
+triggers.andytampan/UnaliveTrigger.attributes.description.disable= Disable the effect. Unimplemented as of now

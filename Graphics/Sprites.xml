@@ -2,9 +2,6 @@
 <Sprites>
     <arrowHorizontal path="objects/andytampan/directionBooster/" start="idle">
 	<Loop id="idle" path="arrowHorizontal" delay="0.08"/>
-    	<Loop id="inside" path="arrowHorizontal" delay="0.1"/>
-    	<Loop id="spin" path="arrowHorizontal" delay="0.1"/>
-    	<Loop id="pop" path="arrowHorizontal" delay="0.1"/>
         <Justify x="0.5" y="0.5" />
     </arrowHorizontal>
     <arrowDiagonal path="objects/andytampan/directionBooster/" start="idle">

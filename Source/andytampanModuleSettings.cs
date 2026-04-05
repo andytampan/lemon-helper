@@ -1,5 +1,6 @@
 namespace Celeste.Mod.andytampan;
 
-public class andytampanModuleSettings : EverestModuleSettings {
+public class andytampanModuleSettings : EverestModuleSettings
+{
 
 }

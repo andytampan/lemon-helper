@@ -1,5 +1,5 @@
 - Name: LemonHelper
-  Version: 0.1.0
+  Version: 0.1.2
   DLL: bin/andytampan.dll
   Dependencies:
     - Name: EverestCore

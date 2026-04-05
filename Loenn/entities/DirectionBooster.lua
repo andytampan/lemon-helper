@@ -41,6 +41,42 @@ local DirectionBooster = {
 
         },
                 {
+            name = "Direction Booster (Green, Upright)",
+            data = {
+                red = false,
+                arrow = true,
+                direction = "upright"
+            },
+
+        },
+                {
+            name = "Direction Booster (Green, Downright)",
+            data = {
+                red = false,
+                arrow = true,
+                direction = "downright"
+            },
+
+        },
+                {
+            name = "Direction Booster (Green, Downleft)",
+            data = {
+                red = false,
+                arrow = true,
+                direction = "downleft"
+            },
+
+        },
+                {
+            name = "Direction Booster (Green, Upleft)",
+            data = {
+                red = false,
+                arrow = true,
+                direction = "upleft"
+            },
+
+        },
+                {
             name = "Direction Booster (Red, Up)",
             data = {
                 red = true,
@@ -73,6 +109,51 @@ local DirectionBooster = {
                 red = true,
                 arrow = true,
                 direction = "left"
+            },
+
+        },
+                {
+            name = "Direction Booster (Red, Upright)",
+            data = {
+                red = true,
+                arrow = true,
+                direction = "upright"
+            },
+
+        },
+                {
+            name = "Direction Booster (Red, Downright)",
+            data = {
+                red = true,
+                arrow = true,
+                direction = "downright"
+            },
+
+        },
+                {
+            name = "Direction Booster (Red, Downleft)",
+            data = {
+                red = true,
+                arrow = true,
+                direction = "downleft"
+            },
+
+        },
+                {
+            name = "Direction Booster (Red, Upleft)",
+            data = {
+                red = true,
+                arrow = true,
+                direction = "upleft"
+            },
+
+        },
+                {
+            name = "Direction Booster (Red, Up)",
+            data = {
+                red = true,
+                arrow = true,
+                direction = "up"
             },
 
         },

@@ -1,15 +1,14 @@
-local sampleTrigger = {
-    name = "andytampan/SampleTrigger",
+local unaliveTrigger = {
+    name = "andytampan/UnaliveTrigger",
     placements = {
         {
-            name = "normal",
+            name = "Unalive Trigger",
             data = {
                 width = 8,
                 height = 8,
-                sampleProperty = 0,
             },
         },
     },
 }
 
-return sampleTrigger
+return unaliveTrigger
