@@ -5,8 +5,19 @@ using Monocle;
 namespace Celeste.Mod.andytampan.Entities;
 
 [CustomEntity("andytampan/KillRefill")]
-public class KillRefill : Refill {
-    public KillRefill(EntityData data, Vector2 offset): base(data.Position + offset, false, true) {
+public class KillRefill : Refill
+{
+    public KillRefill(EntityData data, Vector2 offset) : base(data.Position + offset, false, true)
+    {
+        sprite.Path = "objects/andytampan/refill/kill/idle";
+        sprite.Stop();
+        sprite.ClearAnimations();
+        sprite.AddLoop("idle", "", 0.1f);
+        sprite.Play("idle");
+
+        flash.Path = "objects/andytampan/refill/kill/flash";
+        flash.ClearAnimations();
+        flash.Add("flash", "", 0.05f);
 
     }
     public override void Update()

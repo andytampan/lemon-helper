@@ -7,6 +7,7 @@ using static Celeste.GaussianBlur;
 using static Celeste.Mod.andytampan.Entities.DirectionBooster;
 using static MonoMod.InlineRT.MonoModRule;
 
+
 namespace Celeste.Mod.andytampan;
 
 public class andytampanModule : EverestModule {
