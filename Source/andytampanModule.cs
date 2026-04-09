@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework;
 using Monocle;
 using System;
+using System.Linq;
 using static Celeste.Mod.andytampan.Entities.DirectionBooster;
 
 namespace Celeste.Mod.andytampan;
@@ -47,7 +48,7 @@ public class andytampanModule : EverestModule
         {
             if (self is DirectionBooster dBooster)
             {
-                if (dBooster.boosterDir == BoosterDirection.up)
+                /* if (dBooster.boosterDir == BoosterDirection.up)
                 {
                     var xSpeed = 0f;
                     var ySpeed = -240f;
@@ -78,7 +79,7 @@ public class andytampanModule : EverestModule
                 else if (dBooster.boosterDir == BoosterDirection.down)
                 {
                     var xSpeed = 0f;
-                    var ySpeed = 160f;
+                    var ySpeed = 240f;
                     player.Speed = new(xSpeed, ySpeed);
                     player.DashDir = new(Math.Sign(xSpeed), Math.Sign(ySpeed));
                 }
@@ -101,8 +102,54 @@ public class andytampanModule : EverestModule
                     var xSpeed = -160f;
                     var ySpeed = -160f;
                     player.Speed = new(xSpeed, ySpeed);
-                    player.DashDir = new(Math.Sign(xSpeed), Math.Sign(ySpeed));
+                    player.DashDir = new(Masth.Sign(xSpeed), Math.Sign(ySpeed));
+                } */
+                BoosterDirection[] left = 
+                {
+                    BoosterDirection.downleft,
+                    BoosterDirection.left,
+                    BoosterDirection.upleft
+                };
+                BoosterDirection[] right =
+                [
+                    BoosterDirection.downright,
+                    BoosterDirection.right,
+                    BoosterDirection.upright
+                ];
+                BoosterDirection[] up = 
+                {
+                    BoosterDirection.upleft,
+                    BoosterDirection.up,
+                    BoosterDirection.upright
+                };
+                BoosterDirection[] down = 
+                {
+                    BoosterDirection.downleft,
+                    BoosterDirection.down,
+                    BoosterDirection.downright
+                };
+                var xDirection = 0;
+                var yDirection = 0;
+                if (left.Contains(dBooster.boosterDir))
+                {
+                    xDirection = -1;
                 }
+                else if (right.Contains(dBooster.boosterDir))
+                {
+                    xDirection = 1;
+                }
+                if (down.Contains(dBooster.boosterDir))
+                {
+                    yDirection = 1;
+                }
+                else if (up.Contains(dBooster.boosterDir))
+                {
+                    yDirection = -1;
+                }
+                player.DashDir = new(xDirection, yDirection);
+                player.DashDir.Normalize();
+                player.Speed = player.DashDir * 240;
+
             }
         }
     }

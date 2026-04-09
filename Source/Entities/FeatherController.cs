@@ -21,7 +21,7 @@ public class FeatherController : Entity
             length = data.Float("length");
             refill = data.Float("refill");
             additive = data.Bool("additive");
-            cap = data.Float("cap");
+            cap = data.Float("cap"); 
         }
     }
 
