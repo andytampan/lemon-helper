@@ -48,7 +48,7 @@ public class andytampanModule : EverestModule
         {
             if (self is DirectionBooster dBooster)
             {
-                /* if (dBooster.boosterDir == BoosterDirection.up)
+                /*  if (dBooster.boosterDir == BoosterDirection.up)
                 {
                     var xSpeed = 0f;
                     var ySpeed = -240f;
